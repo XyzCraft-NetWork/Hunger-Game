@@ -1,0 +1,282 @@
+min_player_count: 4
+
+last_man_standing_mode:
+  initial_radius: 300
+  target_radius: 50
+  duration_seconds: 100
+
+original_pos:
+  x: 0
+  y: 68
+  z: -4
+player_spawn_position:
+  pos1:
+    x: 20
+    y: 66
+    z: -4
+  pos2:
+    x: 0
+    y: 66
+    z: -24
+  pos3:
+    x: 20
+    y: 66
+    z: -4
+  pos4:
+    x: 0
+    y: 66
+    z: 16
+  pos5:
+    x: 14
+    y: 66
+    z: 10
+  pos6:
+    x: -14
+    y: 66
+    z: -18
+  pos7:
+    x: 14
+    y: 66
+    z: -18
+  pos8:
+    x: -14
+    y: 66
+    z: 10
+
+player_send_message: "&7%player%: %message%"
+player_opped_send_message: "&r[&cOwner&r] &r%player%: %message%"
+
+player_death:
+  player_killed:
+    - "&c&lELIMINATION &7%player_death% 终结于 %player_killer% 的手中！"
+    - "&c&lELIMINATION &7强大的 %player_death% 在 %player_killer% 的怒火中灰飞烟灭！"
+    - "&c&lELIMINATION &7%player_death% 以为自己安全... 但 %player_killer% 让它们大错特错！"
+    - "&c&lELIMINATION &7%player_killer% 闪电般的攻击击败了 %player_death%！"
+    - "&c&lELIMINATION &7在一场史诗般的战斗中，%player_death% 被 %player_killer% 击败！战斗仍在继续..."
+    - "&c&lELIMINATION &7%player_death% 被 %player_killer% 凭空一击消灭！接下来是谁？"
+    - "&c&lELIMINATION &7竞技场又有一个新死亡：%player_death% 被 %player_killer% 的剑击倒！"
+    - "&c&lELIMINATION &7%player_death% 试图逃跑，但 %player_killer% 没有给他们任何机会！"
+    - "&c&lELIMINATION &7战场颤动，%player_death% 被 %player_killer% 的强力击败！"
+    - "&c&lELIMINATION &7%player_killer% 又夺走了一个灵魂：%player_death% 失败了！"
+  player_natural:
+    - "&c&lELIMINATION &7%player_death% 无法在这严酷的世界中生存，悲惨地迎来了他们的终结。"
+    - "&c&lELIMINATION &7这不是一场战斗... 是大自然本身夺走了 %player_death% 的生命。"
+    - "&c&lELIMINATION &7%player_death% 的最后一口气被无情的世界吞噬。"
+    - "&c&lELIMINATION &7%player_death% 终究败给了大自然的力量，安息吧。"
+    - "&c&lELIMINATION &7%player_death% 以一种平静的方式结束了生命... 但他们恐怕不喜欢这种平静。"
+    - "&c&lELIMINATION &7是一场坠落，一次饥饿，还是一只狡猾的怪物？ %player_death% 没有机会反抗。"
+    - "&c&lELIMINATION &7并非敌人，而是自然的力量将 %player_death% 夺走。"
+    - "&c&lELIMINATION &7%player_death% 以为自己能够在荒野中生存，然而荒野有不同的计划。"
+    - "&c&lELIMINATION &7没有敌人，只有大自然的冷酷怀抱。%player_death% 已经离开。"
+    - "&c&lELIMINATION &7%player_death% 的身体静静躺下，成为了自然力量的牺牲品。"
+
+player_list_header: "&c&lHungerGame &r&7| &b&lXyzCraft"
+player_list_footer: "XyzCraft NetWork"
+
+server-ip: "XyzCraft | Network"
+
+scoreboard:
+  name: "&c&lHungerGame &r&7| &b&lXyzCraft"
+  contents:
+    - "&7Solo %date%"
+    - "&1"
+    - "Next Event:"
+    - "&a%current_event%: %event_change_time%"
+    - "&2"
+    - "Players: &a%alive_player_count%"
+    - "Kills: &a%player_kill_count%"
+    - "&3"
+    - "Position: &a(%position_x%, %position_y%, %position_z%)"
+    - "&4"
+    - "&e%server_ip%"
+
+normal_chest:
+  air:
+    item_nbt: "{id: \"minecraft:air\", Count: 1b}"
+    percent: 1300
+
+  golden_boots:
+    item_nbt: "{id: \"minecraft:golden_boots\", Count: 1b}"
+    percent: 3
+
+  golden_leggings:
+    item_nbt: "{id: \"minecraft:golden_leggings\", Count: 1b}"
+    percent: 3
+
+  golden_chestplate:
+    item_nbt: "{id: \"minecraft:golden_chestplate\", Count: 1b}"
+    percent: 3
+
+  golden_helmet:
+    item_nbt: "{id: \"minecraft:golden_helmet\", Count: 1b}"
+    percent: 3
+
+  wooden_axe:
+    item_nbt: "{id: \"minecraft:wooden_axe\", Count: 1b}"
+    percent: 2
+
+  fishing_rod:
+    item_nbt: "{id: \"minecraft:fishing_rod\", Count: 1b}"
+    percent: 2
+
+  flint_and_steel:
+    item_nbt: "{id: \"minecraft:flint_and_steel\", Count: 1b, tag: {Damage: 56}}"
+    percent: 2
+
+  stick:
+    item_nbt: "{id: \"minecraft:stick\", Count: 4b}"
+    percent: 10
+
+  apple:
+    item_nbt: "{id: \"minecraft:apple\", Count: 1b}"
+    percent: 10
+
+  snowball:
+    item_nbt: "{id: \"minecraft:snowball\", Count: 4b}"
+    percent: 5
+
+  suspicious_stew:
+    item_nbt: "{id: \"minecraft:suspicious_stew\", Count: 1b}"
+    percent: 5
+
+  gold_nugget:
+    item_nbt: "{id: \"minecraft:gold_nugget\", Count: 1b}"
+    percent: 1
+
+  iron_nugget:
+    item_nbt: "{id: \"minecraft:iron_nugget\", Count: 1b}"
+    percent: 1
+
+  egg:
+    item_nbt: "{id: \"minecraft:egg\", Count: 4b}"
+    percent: 5
+
+  enchanted_book:
+    item_nbt: "{id: \"minecraft:enchanted_book\", Count: 1b, tag: {StoredEnchantments: [{id: \"minecraft:protection\", lvl: 1s}]}}"
+    percent: 1
+
+  experience_bottle:
+    item_nbt: "{id: \"minecraft:experience_bottle\", Count: 16b}"
+    percent: 5
+
+  shield:
+    item_nbt: "{id: \"minecraft:shield\", Count: 1b}"
+    percent: 20
+
+  mushroom_stew:
+    item_nbt: "{id: \"minecraft:mushroom_stew\", Count: 1b}"
+    percent: 10
+
+  spectral_arrow:
+    item_nbt: "{id: \"minecraft:spectral_arrow\", Count: 1b}"
+    percent: 1
+
+  beef:
+    item_nbt: "{id: \"minecraft:beef\", Count: 1b}"
+    percent: 10
+
+  wooden_sword:
+    item_nbt: "{id: \"minecraft:wooden_sword\", Count: 1b}"
+    percent: 5
+
+  stone_sword:
+    item_nbt: "{id: \"minecraft:stone_sword\", Count: 1b}"
+    percent: 3
+
+  golden_sword:
+    item_nbt: "{id: \"minecraft:golden_sword\", Count: 1b}"
+    percent: 3
+
+  compass:
+    item_nbt: "{id: \"minecraft:compass\", Count: 1b}"
+    percent: 5
+
+  leather_boots:
+    item_nbt: "{id: \"minecraft:leather_boots\", Count: 1b}"
+    percent: 5
+
+  leather_leggings:
+    item_nbt: "{id: \"minecraft:leather_leggings\", Count: 1b}"
+    percent: 5
+
+  leather_chestplate:
+    item_nbt: "{id: \"minecraft:leather_chestplate\", Count: 1b}"
+    percent: 5
+
+  leather_helmet:
+    item_nbt: "{id: \"minecraft:leather_helmet\", Count: 1b}"
+    percent: 5
+
+  chainmail_leggings:
+    item_nbt: "{id: \"minecraft:chainmail_leggings\", Count: 1b}"
+    percent: 3
+
+  chainmail_boots:
+    item_nbt: "{id: \"minecraft:chainmail_boots\", Count: 1b}"
+    percent: 3
+
+  chainmail_chestplate:
+    item_nbt: "{id: \"minecraft:chainmail_chestplate\", Count: 1b}"
+    percent: 3
+
+  chainmail_helmet:
+    item_nbt: "{id: \"minecraft:chainmail_helmet\", Count: 1b}"
+    percent: 3
+
+  bow:
+    item_nbt: "{id: \"minecraft:bow\", Count: 1b}"
+    percent: 3
+
+  arrow:
+    item_nbt: "{id: \"minecraft:arrow\", Count: 4b}"
+    percent: 3
+
+pro_chest:
+  air:
+    item_nbt: "{id: \"minecraft:air\", Count: 1b}"
+    percent: 1300
+
+  iron_sword:
+    item_nbt: "{id: \"minecraft:iron_sword\", Count: 1b}"
+    percent: 5
+
+  compass:
+    item_nbt: "{id: \"minecraft:compass\", Count: 1b}"
+    percent: 5
+
+  iron_boots:
+    item_nbt: "{id: \"minecraft:iron_boots\", Count: 1b}"
+    percent: 2
+
+  iron_leggings:
+    item_nbt: "{id: \"minecraft:iron_leggings\", Count: 1b}"
+    percent: 2
+
+  iron_chestplate:
+    item_nbt: "{id: \"minecraft:iron_chestplate\", Count: 1b}"
+    percent: 2
+
+  iron_helmet:
+    item_nbt: "{id: \"minecraft:iron_helmet\", Count: 1b}"
+    percent: 2
+
+  arrow:
+    item_nbt: "{id: \"minecraft:arrow\", Count: 8b}"
+    percent: 10
+
+  gold_ingot:
+    item_nbt: "{id: \"minecraft:gold_ingot\", Count: 1b}"
+    percent: 5
+
+  iron_ingot:
+    item_nbt: "{id: \"minecraft:iron_ingot\", Count: 1b}"
+    percent: 5
+
+  cooked_beef:
+    item_nbt: "{id: \"minecraft:cooked_beef\", Count: 1b}"
+    percent: 10
+
+  stone_axe:
+    item_nbt: "{id: \"minecraft:stone_axe\", Count: 1b}"
+    percent: 2
+

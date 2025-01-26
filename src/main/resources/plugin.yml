@@ -1,0 +1,9 @@
+name: HungerGame
+version: '${project.version}'
+main: xyzcraft.hungergame.main
+api-version: '1.18'
+load: STARTUP
+commands:
+  to:
+    description: Test command
+    permission: op
